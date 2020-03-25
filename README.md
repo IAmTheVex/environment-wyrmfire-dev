@@ -10,7 +10,7 @@ This repository contains the source code for [Jenkins X Boot configuration](http
 * either use Terraform to spin up a GKE cluster with a `jx` namespace and any necessary cloud resources (e.g. on GCP we need a Kaniko Service Account and Secret)
 * create an empty GKE cluster by hand e.g. via `jx create cluster gke --skip-installation` or using the [GCP Console](https://console.cloud.google.com/)
 
-### Run the new Jenkins X Bootstrap Pipelinezzz
+### Run the new Jenkins X Bootstrap Pipeline
 
 Create a fork of this git repository on github. We suggest renaming it to match the pattern `environment-<cluster name>-dev`. To rename your repository go to the repository settings in github. 
 
