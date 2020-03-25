@@ -17,7 +17,7 @@ cluster:
   zone: europe-west3-b
 environments:
 - ingress:
-    domain: 35.246.158.168.nip.io
+    domain: wyrmfire.thevexis.me
     externalDNS: false
     namespaceSubDomain: .jx.
     tls:
@@ -48,7 +48,7 @@ environments:
   repository: environment-wyrmfire-production
 gitops: true
 ingress:
-  domain: 35.246.158.168.nip.io
+  domain: wyrmfire.thevexis.me
   externalDNS: false
   namespaceSubDomain: .jx.
   tls:
