@@ -28,9 +28,10 @@ environments:
   key: dev
   repository: environment-wyrmfire-dev
 - ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
+    cloud_dns_secret_name: external-dns-gcp-sa
+    domain: wyrmfire.thevexis.me
+    externalDNS: true
+    namespaceSubDomain: .staging.
     tls:
       email: ""
       enabled: false
