@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/IAmTheVex/wrm-test-app.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: IAmTheVex
+  repo: wrm-test-app-2
+  url: https://github.com/IAmTheVex/wrm-test-app-2.git
+  version: ""
+  versionURL: ""
