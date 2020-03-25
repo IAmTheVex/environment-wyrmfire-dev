@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: IAmTheVex
+    provider: github
+    repository: wrm-test-app-2
+  name: iamthevex-wrm-test-app-2
+spec:
+  description: Imported application for IAmTheVex/wrm-test-app-2
+  httpCloneURL: https://github.com/IAmTheVex/wrm-test-app-2.git
+  org: IAmTheVex
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: wrm-test-app-2
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/IAmTheVex/wrm-test-app-2.git
