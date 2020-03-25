@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: IAmTheVex
+  repo: wrm-test-app
+  url: https://github.com/IAmTheVex/wrm-test-app.git
+  version: ""
+  versionURL: ""
