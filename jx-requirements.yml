@@ -1,35 +1,81 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/IAmTheVex/environment-wyrmfire-dev
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: false
-  project: ""
+  clusterName: wyrmfire
+  devEnvApprovers:
+  - IAmTheVex
+  environmentGitOwner: IAmTheVex
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: vexapps
   provider: gke
-  zone: ""
-gitops: true
+  registry: gcr.io
+  zone: europe-west3-b
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: 35.246.158.168.nip.io
+    externalDNS: false
+    namespaceSubDomain: .jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  repository: environment-wyrmfire-dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-wyrmfire-staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  repository: environment-wyrmfire-production
+gitops: true
 ingress:
-  domain: ""
+  domain: 35.246.158.168.nip.io
   externalDNS: false
+  namespaceSubDomain: .jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: local
 storage:
+  backup:
+    enabled: false
+    url: ""
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://wyrmfire-logs-874794e0-ff98-4a55-9277-3f03256d298c
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://wyrmfire-reports-191f4b8a-f96f-4eac-8188-780d9af35c3b
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://wyrmfire-repository-9f53d7b8-7a4d-4883-915d-df66dd35088
+vault: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: "master"
+  ref: v1.0.403
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow

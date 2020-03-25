@@ -1,0 +1,10 @@
+adminUser:
+  password: local:wyrmfire/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: laurentiu@thevexis.me
+  token: local:wyrmfire/pipelineUser:token
+  username: IAmTheVex
+prow:
+  hmacToken: local:wyrmfire/prow:hmacToken
