@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: IAmTheVex
+    provider: github
+    repository: va-test
+  name: iamthevex-va-test
+spec:
+  description: Imported application for IAmTheVex/va-test
+  httpCloneURL: https://github.com/IAmTheVex/va-test.git
+  org: IAmTheVex
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: va-test
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/IAmTheVex/va-test.git
