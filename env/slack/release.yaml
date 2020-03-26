@@ -1,0 +1,27 @@
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-03-19T13:43:39Z"
+  deletionTimestamp: null
+  name: '{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}'
+spec:
+  commits:
+  - author: {}
+    branch: master
+    committer: {}
+    message: |
+      docs: add step to invite slack bot to room
+    sha: 892043cdfdbd7c3a8043dde19320b03e599f2b26
+  - author: {}
+    branch: master
+    committer: {}
+    message: |
+      docs: add screenshots of slack bot features
+    sha: d186ef9c04be0ddcedcc1c784cc09378818a7d85
+  gitCloneUrl: https://github.com/jenkins-x-labs/slack.git
+  gitHttpUrl: https://github.com/jenkins-x-labs/slack
+  gitOwner: jenkins-x-labs
+  gitRepository: slack
+  name: '{{ .Chart.Name }}'
+  version: 0.0.17
+status: {}
