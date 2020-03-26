@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/IAmTheVex/wrm-test-app-2.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: IAmTheVex
+  repo: va-test
+  url: https://github.com/IAmTheVex/va-test.git
+  version: ""
+  versionURL: ""
